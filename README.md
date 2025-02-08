@@ -10,3 +10,12 @@
 
 ![image](https://github.com/user-attachments/assets/2af7411a-50db-40af-a13e-85bf8bcbf668)
 
+![image](https://github.com/user-attachments/assets/9b1a2879-7db1-4680-a65b-6388a4f588e2)
+
+устанавливаю docker
+
+![image](https://github.com/user-attachments/assets/115c7545-bd75-42fa-a73b-c16f4f9289f5)
+
+запускаю его и разрешаю автозапуск 
+
+![image](https://github.com/user-attachments/assets/e69919ae-fe26-46a1-a842-e0b38cf06efe)
