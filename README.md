@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/8a9873b7-872a-4e24-848d-c4e3a9b49ec1)
+
+
 Установил линукс
 
 Утановил гостевые дополнения
@@ -19,3 +22,16 @@
 запускаю его и разрешаю автозапуск 
 
 ![image](https://github.com/user-attachments/assets/e69919ae-fe26-46a1-a842-e0b38cf06efe)
+
+![image](https://github.com/user-attachments/assets/49e65d39-b7c5-44ff-812f-3aea5bd5b432)
+
+![image](https://github.com/user-attachments/assets/4284e9cb-8467-473c-a59e-062d7781f96a)
+
+![image](https://github.com/user-attachments/assets/16e76a42-3a42-4cc9-abd1-fd80caad6f6a)
+
+![image](https://github.com/user-attachments/assets/817ecfe1-7b58-48d4-8f31-5a6d1e7ca3fe)
+![image](https://github.com/user-attachments/assets/6921aca7-2b8e-434f-ac4c-cc22e7c5a5d9)
+
+![image](https://github.com/user-attachments/assets/d54c6d30-c0ec-4163-8e3c-796865a2a507)
+
+![image](https://github.com/user-attachments/assets/fcaf89a9-73d6-4043-b2fc-329da997a5c1)
