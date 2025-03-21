@@ -74,24 +74,25 @@
 
 Затем был клонирован репозиторий и настроена структура каталогов:
 
-cd grafana_stack_for_docker
-sudo mkdir -p /mnt/common_volume/swarm/grafana/config
-sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}
+`cd grafana_stack_for_docker`
+`sudo mkdir -p /mnt/common_volume/swarm/grafana/config`
+`sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}`
 Для обеспечения корректных прав доступа владелец созданных папок был изменён на текущего пользователя:
 
-sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}
+`sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}`
 Был создан конфигурационный файл grafana.ini, если он отсутствовал:
 
-touch /mnt/common_volume/grafana/grafana-config/grafana.ini
+`touch /mnt/common_volume/grafana/grafana-config/grafana.ini`
 Файлы конфигурации были скопированы в соответствующую директорию:
 
-cp config/* /mnt/common_volume/swarm/grafana/config/
+`cp config/* /mnt/common_volume/swarm/grafana/config/`
 Файл grafana.yaml был переименован в docker-compose.yaml для использования Docker Compose:
 
-mv grafana.yaml docker-compose.yaml
+`mv grafana.yaml docker-compose.yaml`
+
 Запуск контейнеров был выполнен в фоновом режиме:
 
-sudo docker compose up -d
+`sudo docker compose up -d`
 
 
 все команды
@@ -104,11 +105,66 @@ sudo docker compose up -d
 
 ![image](https://github.com/user-attachments/assets/85630126-0d5f-4a0d-a93d-3ba8774349ba)
 
+Для остановки контейнеров использовалась команда:
+
 `sudo docker compose stop`
 
 ![image](https://github.com/user-attachments/assets/38fc2417-9e2c-42b5-82c1-b945faf2161c)
 
+Для полной очистки проекта, включая остановку и удаление контейнеров, сетей и других ресурсов, использовалась команда:
+
 `sudo docker compose down`
 
 ![image](https://github.com/user-attachments/assets/f39435c1-5203-4b69-bdd6-f613118b300e)
+
+Для проверки состояния контейнеров использовалась команда:
+
+
+`sudo docker compose ps`
+
+![image](https://github.com/user-attachments/assets/7d1c13c0-749a-4ad8-b11a-54e7f8fb7c93)
+
+
+Клонирование репозитория Grafana
+
+Для работы с проектом Grafana был клонирован репозиторий с GitHub:
+
+`git clone https://github.com/ROMABLUNT/grafana_college.git`
+
+![image](https://github.com/user-attachments/assets/10945b47-9bf3-4901-a412-ae40cc11c031)
+
+pwd, показывает текущую директорию
+
+![image](https://github.com/user-attachments/assets/87cccbea-0113-4fe1-b350-f7b13ec6b382)
+
+Настройка Prometheus и Node Exporter
+Были настроены конфигурационные файлы для Node Exporter и Prometheus, добавлены данные из репозитория разработчика.
+
+![image](https://github.com/user-attachments/assets/9c680ae2-f77a-48ae-9675-5da2111d23bf)
+![image](https://github.com/user-attachments/assets/d5e5e488-1efc-43a6-a448-7ba54f45be5b)
+![image](https://github.com/user-attachments/assets/bd289172-1ab0-43b7-bbe1-4fcb5e3eafe0)
+![image](https://github.com/user-attachments/assets/d3fa7137-b72d-4ce9-bad7-7e4c52af8046)
+
+В итоге по localhost:3000 попадаю на графану
+
+![image](https://github.com/user-attachments/assets/c0b13726-fcf7-4c47-941f-f30ca0a5617b)
+
+
+Создание Dashboard и визуализаций
+![image](https://github.com/user-attachments/assets/4c16da06-2ed3-44db-9bb0-fe7b18c982a1)
+![image](https://github.com/user-attachments/assets/6a24d4d4-6546-454a-9796-5d4df3359eed)
+![image](https://github.com/user-attachments/assets/ddb8ff8a-2ebd-4e96-b1ed-995a2e18e188)
+![image](https://github.com/user-attachments/assets/2bad764f-d863-4687-9518-addf217bd77a)
+![image](https://github.com/user-attachments/assets/0c38c8fa-3857-486c-bdb6-dba5017605bb)
+![image](https://github.com/user-attachments/assets/210fd384-8789-4160-8b85-d3e8b389f2f1)
+![image](https://github.com/user-attachments/assets/7090a661-c282-4788-ada5-28d85461a842)
+![image](https://github.com/user-attachments/assets/87d5d79d-63db-49d9-8e05-5841c873fac5)
+
+
+Был создан Dashboard в Grafana, добавлены визуализации и настроен источник данных Prometheus. URL Prometheus был указан, аутентификация установлена (логин: admin, пароль: admin). После сохранения настроек была выполнена проверка работоспособности.
+
+
+Результат работы был успешно отображён в интерфейсе Grafana.
+
+![image](https://github.com/user-attachments/assets/75ff6834-3315-4e60-b88f-fea246d442e5)
 
