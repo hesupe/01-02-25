@@ -140,8 +140,13 @@ pwd, показывает текущую директорию
 Настройка Prometheus и Node Exporter
 Были настроены конфигурационные файлы для Node Exporter и Prometheus, добавлены данные из репозитория разработчика.
 
+sudo vi docker-compose.yaml
+
 ![image](https://github.com/user-attachments/assets/9c680ae2-f77a-48ae-9675-5da2111d23bf)
 ![image](https://github.com/user-attachments/assets/d5e5e488-1efc-43a6-a448-7ba54f45be5b)
+
+sudo vi prometheus.yaml
+
 ![image](https://github.com/user-attachments/assets/bd289172-1ab0-43b7-bbe1-4fcb5e3eafe0)
 ![image](https://github.com/user-attachments/assets/d3fa7137-b72d-4ce9-bad7-7e4c52af8046)
 
