@@ -152,12 +152,19 @@ pwd, показывает текущую директорию
 
 Создание Dashboard и визуализаций
 ![image](https://github.com/user-attachments/assets/4c16da06-2ed3-44db-9bb0-fe7b18c982a1)
+
 ![image](https://github.com/user-attachments/assets/6a24d4d4-6546-454a-9796-5d4df3359eed)
+
 ![image](https://github.com/user-attachments/assets/ddb8ff8a-2ebd-4e96-b1ed-995a2e18e188)
+
 ![image](https://github.com/user-attachments/assets/2bad764f-d863-4687-9518-addf217bd77a)
+
 ![image](https://github.com/user-attachments/assets/0c38c8fa-3857-486c-bdb6-dba5017605bb)
+
 ![image](https://github.com/user-attachments/assets/210fd384-8789-4160-8b85-d3e8b389f2f1)
+
 ![image](https://github.com/user-attachments/assets/7090a661-c282-4788-ada5-28d85461a842)
+
 ![image](https://github.com/user-attachments/assets/87d5d79d-63db-49d9-8e05-5841c873fac5)
 
 
