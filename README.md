@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8a9873b7-872a-4e24-848d-c4e3a9b49ec1)
+![image](https://github.com/user-attachments/assets/224a3a2f-3c4c-4055-905a-78423f0c6203)![image](https://github.com/user-attachments/assets/8a9873b7-872a-4e24-848d-c4e3a9b49ec1)
 
 
 Установил линукс на oraclebox. поставил 4гб оперативной памяти и 4 процессора.
@@ -179,4 +179,31 @@ pwd, показывает текущую директорию
 Результат работы был успешно отображён в интерфейсе Grafana.
 
 ![image](https://github.com/user-attachments/assets/75ff6834-3315-4e60-b88f-fea246d442e5)
+
+VICTORIA METRICS
+
+Заполняю новый коннекшн
+
+![image](https://github.com/user-attachments/assets/b4e46c98-1ff4-490f-a31e-3958576f2967)
+
+Ставлю код и параметр запроса 
+
+![image](https://github.com/user-attachments/assets/5c79a32b-2edf-4594-872e-b5a59ba48fcd)
+
+Ввожу в терминал две команды
+
+![image](https://github.com/user-attachments/assets/4b8ccd08-fec0-483b-8aa8-2304663c56a5)
+
+`echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus`  
+
+`curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'`
+
+Всё окей
+
+Результат в графане
+
+![image](https://github.com/user-attachments/assets/21481a3f-fa64-4d46-ba26-da2359941329)
+
+В виктории метрикс
+![image](https://github.com/user-attachments/assets/acb1b950-9e71-4ef8-a934-e622a6f8fd3a)
 
