@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/224a3a2f-3c4c-4055-905a-78423f0c6203)
+![image](https://github.com/user-attachments/assets/24099051-2a7e-4860-8206-58c45d63aee2)
 
 
 Установил линукс на oraclebox. поставил 4гб оперативной памяти и 4 процессора.
