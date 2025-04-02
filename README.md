@@ -198,6 +198,9 @@ VICTORIA METRICS
 
 `curl -G 'http://localhost:8428/api/v1/query' --data-urlencode 'query=OILCOINT_metric1'`
 
+![image](https://github.com/user-attachments/assets/fcbb8d11-41c1-4106-894a-421d5eb46e6c)
+
+
 Всё окей
 
 Результат в графане
